@@ -24,7 +24,6 @@ $(".next-button.email").click(function () {
       if (parsedResponse != "false") {
         console.log("Username Correct");
         localStorage.setItem("username", username);
-        localStorage.setItem("auth_token", "");
         $(".email-section").addClass("fold-up");
         $(".password-section").removeClass("folded");
       } else {
@@ -71,7 +70,6 @@ $(".next-button").hover(function () {
 
 $(".next-button.password").click(function () {
   var password = document.getElementById("password").value;
-  console.log(localStorage.username);
   $.ajax({
     type: "POST",
     url: "assests/php/password.php",
@@ -79,21 +77,15 @@ $(".next-button.password").click(function () {
     data: {
       username: localStorage.username,
       password: password,
-      auth_token: localStorage.auth_token,
     },
     success: function (response) {
-      console.log(response);
       var parsedResponse = JSON.parse(response);
       console.log(parsedResponse);
       if (parsedResponse != "false") {
-        if (parsedResponse != "failed") {
-          localStorage.setItem("auth_token", parsedResponse);
-          console.log("Password Correct");
-          $(".password-section").addClass("fold-up");
-          window.location.pathname = "ddv/intro.html";
-        } else {
-          window.location.pathname = "ddv/logout.html";
-        }
+        localStorage.setItem("auth_token", parsedResponse);
+        console.log("Password Correct");
+        $(".password-section").addClass("fold-up");
+        window.location.pathname = "ddv/intro.html";
       } else {
         console.log("Password wrong");
         var fail = document.getElementById("failed");
@@ -108,8 +100,6 @@ $(".next-button.password").click(function () {
 
     error: function (error) {},
   });
-  $(".repeat-password-section").addClass("fold-up");
-  $(".failed-user").css("marginTop", 0);
 });
 
 $("#failed").click(function () {
