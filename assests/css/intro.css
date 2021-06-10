@@ -1,8 +1,13 @@
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../font/Montserrat-Medium.ttf");
+}
 body {
   background-image: url("../images/introbg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: "Monsterrat-Medium";
 }
 
 .ml9 {

@@ -8,7 +8,7 @@ $row = mysqli_fetch_assoc($tab);
 if ($row['password'] == $password) {
     if ($row['auth_token'] == NULL and $row['login_time'] == NULL) {
         date_default_timezone_set('Asia/Kolkata');
-        $time = date('Y-m-h H:i:s');
+        $time = date('Y-m-d H:i:s');
         $auth_token = hash("sha256", rand());
         $updt = "UPDATE `STRTjSSGl1`.`user_details` SET `auth_token` = '$auth_token', `login_time` = '$time' WHERE (`username` = '$name');";
         $conn->query($updt);
