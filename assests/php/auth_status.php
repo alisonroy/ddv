@@ -13,7 +13,7 @@ if ($row['auth_token'] == $auth_token) {
         } elseif ($row['answer2'] == NULL) {
             echo json_encode("ddv/comp.html");
         } elseif ($row['answer3'] == NULL) {
-            echo json_encode("ddv/mona.html");
+            echo json_encode("ddv/mons.html");
         } elseif ($row['answer4'] == NULL) {
             echo json_encode("ddv/map.html");
         } elseif ($row['answer5'] == NULL) {

@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../font/Montserrat-ExtraBold.ttf");
+}
+body {
+  color: aliceblue;
+}
+#compass {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  height: 300px;
+  width: 300px;
+}
+.right-text {
+  font-family: "Montserrat-ExtraBold";
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  right: 5%;
+  padding: 1rem;
+  color: #131313;
+  font-size: 1.5rem;
+}
+#answer-input-box {
+  height: 45px;
+  padding: 0;
+  margin-top: 20px;
+  font: 400 1.5rem "Montserrat-ExtraBold";
+  letter-spacing: 0.025em;
+  border: none;
+  color: #131313;
+  background: transparent;
+  text-align: center;
+  outline: none;
+  border-bottom: solid thin rgba(0, 0, 0);
+}
+
+button {
+  border: none;
+  width: 100px;
+  height: 30px;
+  color: #131313;
+  text-align: center;
+  border-radius: 0px 10px;
+  background: transparent;
+  outline: none;
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 0px 10px;
+}
+
+#answer-submit {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .right-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    font-size: 1rem;
+  }
+  #answer-input-box {
+    height: 45px;
+    padding: 0;
+    margin-top: 20px;
+    font: 400 1.5rem "Montserrat-ExtraBold";
+    letter-spacing: 0.025em;
+    border: none;
+    background: transparent;
+    text-align: center;
+    outline: none;
+    border-bottom: solid thin rgba(255, 255, 255);
+  }
+  #answer-input-box {
+    padding: 0;
+    margin-right: 5px;
+  }
+  #compass {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 300px;
+    width: 300px;
+  }
+}
