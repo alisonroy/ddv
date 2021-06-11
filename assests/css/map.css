@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../font/Montserrat-ExtraBold.ttf");
+}
+body {
+  font-size: 40px;
+  height: 100vh;
+  padding: 2em;
+  overflow: hidden;
+  color: #fff;
+  background-color: #1f1400;
+  background-image: url("https://www.transparenttextures.com/patterns/tileable-wood.png");
+  background-size: 1000px;
+}
+
+/* body::after {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  z-index: -1;
+  width: 200%;
+  height: 200%;
+  background: url(https://svgsilh.com/png-512/304433.png) no-repeat 50% 50%;
+  
+  opacity: 0.6;
+  transform: rotate(10deg);
+  filter: blur(2px);
+} */
+
+#map {
+  width: 400px;
+  height: 400px;
+  margin: 1rem;
+  background: url(https://st2.depositphotos.com/3325457/6595/i/950/depositphotos_65956145-stock-photo-old-pirate-map.jpg)
+    no-repeat 50% 50%;
+  background-size: cover;
+  transform: rotate(0deg);
+  transition: transform 750ms;
+}
+
+.right-text {
+  font-family: "Montserrat-ExtraBold";
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  right: 5%;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#answer-input-box {
+  height: 45px;
+  padding: 0;
+  margin-top: 20px;
+  font: 400 1.5rem "Montserrat-ExtraBold";
+  letter-spacing: 0.025em;
+  border: none;
+  color: #fff;
+  background: transparent;
+  text-align: center;
+  outline: none;
+  border-bottom: solid thin rgba(255, 255, 255);
+}
+
+button {
+  border: none;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 0px 10px;
+  background: transparent;
+  outline: none;
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 0px 10px;
+}
+
+#answer-submit {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  #map {
+    width: 130px;
+    height: 130px;
+  }
+  .right-text {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    right: 5%;
+    font-size: 1rem;
+  }
+  #answer-input-box {
+    height: 45px;
+    padding: 0;
+    margin-top: 20px;
+    font: 400 1.5rem "Montserrat-ExtraBold";
+    letter-spacing: 0.025em;
+    border: none;
+    background: transparent;
+    text-align: center;
+    outline: none;
+    border-bottom: solid thin rgba(255, 255, 255);
+  }
+  #answer-input-box {
+    padding: 0;
+    margin-right: 5px;
+  }
+}
