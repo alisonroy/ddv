@@ -30,23 +30,26 @@ body {
 .starwars .start span {
   color: #4bd5ee;
 }
-.starwars .intro {
+/* .starwars .intro {
   width: 15em;
   margin: 0 0 0 -7.5em;
   font-size: 200%;
   font-weight: 400;
   color: #4bd5ee;
   opacity: 0;
-  -webkit-animation: intro 6s ease-out 1s;
-  animation: intro 6s ease-out 1s;
-}
+  -webkit-animation: intro 5s ease-out;
+  animation: intro 5s ease-out;
+} */
 .starwars .logo {
+  width: 300px !important;
+  height: 300px !important;
   opacity: 0;
-  -webkit-animation: logo 9s ease-out 9s;
-  animation: logo 9s ease-out 9s;
+  -webkit-animation: logo 8s ease-out 1s;
+  animation: logo 6s ease-out 1s;
 }
-.starwars .logo svg {
-  width: inherit;
+.starwars .logo img {
+  width: 300px !important;
+  height: 300px !important;
 }
 .starwars .titles {
   width: 14.65em;
@@ -63,8 +66,8 @@ body {
 .starwars .titles > div {
   position: absolute;
   top: 100%;
-  -webkit-animation: titles 81s linear 13s;
-  animation: titles 81s linear 13s;
+  -webkit-animation: titles 81s linear 7s;
+  animation: titles 81s linear 7s;
 }
 .starwars .titles > div > p {
   margin: 1.35em 0 1.85em 0;

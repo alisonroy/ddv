@@ -6,12 +6,6 @@ StarWars = (function () {
     // Context wrapper
     this.el = $(args.el);
 
-    // Audio to play the opening crawl
-    this.audio = this.el.find("audio").get(0);
-
-    // Start the animation
-    this.start = this.el.find(".start");
-
     // The animation wrapper
     this.animation = this.el.find(".animation");
 
