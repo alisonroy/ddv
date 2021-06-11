@@ -10,12 +10,12 @@ body {
 }
 .right-text {
   position: absolute;
-  top: 25%;
+  top: 5%;
   left: 40%;
   right: 5%;
   padding: 1rem;
   color: #979797;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .seaContainer {
   position: absolute;

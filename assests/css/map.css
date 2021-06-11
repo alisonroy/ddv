@@ -42,12 +42,12 @@ body {
 .right-text {
   font-family: "Montserrat-ExtraBold";
   position: absolute;
-  top: 25%;
+  top: 5%;
   left: 40%;
   right: 5%;
   padding: 1rem;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 #answer-input-box {
   height: 45px;

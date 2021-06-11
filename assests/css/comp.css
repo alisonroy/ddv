@@ -12,10 +12,14 @@ body {
   height: 300px;
   width: 300px;
 }
+#M1 {
+  height: 125px;
+  flex: auto;
+}
 .right-text {
   font-family: "Montserrat-ExtraBold";
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 40%;
   right: 5%;
   padding: 1rem;
