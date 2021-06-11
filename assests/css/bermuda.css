@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  background-color: #006375;
+}
+
+.svg {
+  width: 300px;
+  margin: 5vh auto;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.pens-link {
+  display: inline-block;
+  margin: 5vh auto 10vh;
+  padding: 1em 2em;
+  font: bold 1rem Arial, sans-serif;
+  text-decoration: none;
+  color: #006375;
+  border-radius: 50px;
+  background-color: #00cff7;
+  transition: 0.3s;
+}
+
+.pens-link:hover {
+  background: #fff;
+}
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../font/Montserrat-ExtraBold.ttf");
+}
+
+.right-text {
+  font-family: "Montserrat-ExtraBold";
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  right: 5%;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#answer-input-box {
+  height: 45px;
+  padding: 0;
+  margin-top: 20px;
+  font: 400 1.5rem "Montserrat-ExtraBold";
+  letter-spacing: 0.025em;
+  border: none;
+  color: #fff;
+  background: transparent;
+  text-align: center;
+  outline: none;
+  border-bottom: solid thin rgba(255, 255, 255);
+}
+
+button {
+  border: none;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 0px 10px;
+  background: transparent;
+  outline: none;
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 0px 10px;
+}
+
+#answer-submit {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .svg {
+    width: 150px;
+    margin: 5vh auto;
+    height: 150px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+  }
+  .right-text {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    right: 5%;
+    font-size: 1rem;
+  }
+  #answer-input-box {
+    height: 45px;
+    padding: 0;
+    margin-top: 20px;
+    font: 400 1.5rem "Montserrat-ExtraBold";
+    letter-spacing: 0.025em;
+    border: none;
+    background: transparent;
+    text-align: center;
+    outline: none;
+    border-bottom: solid thin rgba(255, 255, 255);
+  }
+  #answer-input-box {
+    padding: 0;
+    margin-right: 5px;
+  }
+}
