@@ -15,7 +15,7 @@ if ($row['auth_token'] == $auth_token) {
     if ($ans_row['answer1'] == $answer) {
         $updt = "UPDATE `STRTjSSGl1`.`user_details` SET `$answer_no` = '$answer' WHERE (`username` = '$name');";
         $conn->query($updt);
-        $arr = ["sub", "comp", "mons", "map", "devil", "bermuda"];
+        $arr = ["sub", "comp", "mons", "map", "net", "bermuda"];
         echo json_encode($arr[((int)$answer_no[6]) - 1]);
     }
 } else {

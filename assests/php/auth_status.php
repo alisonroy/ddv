@@ -17,7 +17,7 @@ if ($row['auth_token'] == $auth_token) {
         } elseif ($row['answer4'] == NULL) {
             echo json_encode("ddv/map.html");
         } elseif ($row['answer5'] == NULL) {
-            echo json_encode("ddv/devil.html");
+            echo json_encode("ddv/net.html");
         } elseif ($row['answer6'] == NULL) {
             echo json_encode("ddv/bermuda.html");
         } else {
