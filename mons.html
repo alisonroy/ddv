@@ -14,42 +14,55 @@
 </head>
 
 <body>
-    <div class='l-image-container'>
-        <section class='monster-container'>
-            <div class="monster">
-                <div class="monster__head">
-                    <div class="eye">
-                        <div class="eye__pupil"></div>
-                        <div class="mouth">
-                            <div class="mouth__teeth mouth__teeth--left"></div>
-                            <div class="mouth__teeth mouth__teeth--right"></div>
+    <div class="container text-center rellax">
+        <div class='loader-ring' id="loader">
+            <div class='loader-ring-light'></div>
+            <div class='loader-ring-track'></div>
+            <img class="lo" src="assests/images/logo-white.png" alt="">
+            Bravo! you have successfully won over the devil.
+
+        </div>
+    </div>
+    <div id="main">
+        <div class='l-image-container'>
+            <section class='monster-container'>
+                <div class="monster">
+                    <div class="monster__head">
+                        <div class="eye">
+                            <div class="eye__pupil"></div>
+                            <div class="mouth">
+                                <div class="mouth__teeth mouth__teeth--left"></div>
+                                <div class="mouth__teeth mouth__teeth--right"></div>
+                            </div>
                         </div>
                     </div>
+                    <div class="monster__body"></div>
+                    <div class="monster__legs">
+                        <div class="monster__feet monster__feet--1"></div>
+                        <div class="monster__feet monster__feet--2"></div>
+                        <div class="monster__feet monster__feet--3"></div>
+                        <div class="monster__feet monster__feet--4"></div>
+                        <div class="monster__feet monster__feet--5"></div>
+                        <div class="monster__feet monster__feet--6"></div>
+                        <div class="monster__feet monster__feet--7"></div>
+                    </div>
                 </div>
-                <div class="monster__body"></div>
-                <div class="monster__legs">
-                    <div class="monster__feet monster__feet--1"></div>
-                    <div class="monster__feet monster__feet--2"></div>
-                    <div class="monster__feet monster__feet--3"></div>
-                    <div class="monster__feet monster__feet--4"></div>
-                    <div class="monster__feet monster__feet--5"></div>
-                    <div class="monster__feet monster__feet--6"></div>
-                    <div class="monster__feet monster__feet--7"></div>
-                </div>
+            </section>
+        </div>
+        <div class="right-text">Using the compass you get navigated and go deep into the majestic underworld!
+            There you find a monster megalodon attacking your submarine.
+            To fight out with all strength and courage against the dreadful monster, solve this question!
+            <img id="M2" src="assests/images/M2d.png">
+            <br>
+            <div class="text-danger d-none" id="wrong-ans">
+                Wrong Answer
             </div>
-        </section>
-    </div>
-    <div class="right-text">Using the compass you get navigated and go deep into the majestic underworld!
-        There you find a monster megalodon attacking your submarine.
-        To fight out with all strength and courage against the dreadful monster, solve this question!
-        <img id="M2" src="assests/images/M2d.png">
-        <br>
-        Bravo! you have successfully won over the devil.
-        <form id="answer-form">
-            <input type="text" id="answer-input-box" name="answer1" />
-            </br>
-            <button type="submit" id="answer-submit">Submit</button>
-        </form>
+            <form id="answer-form">
+                <input type="text" id="answer-input-box" name="answer3" />
+                </br>
+                <button type="submit" id="answer-submit">Submit</button>
+            </form>
+        </div>
     </div>
 
     <!-- Dependency Scripts -->
@@ -61,6 +74,7 @@
 
     <script src="assests/js/auth_status.js"></script>
     <script src="assests/js/answer.js"></script>
+    <script src="assests/js/mons.js"></script>
 
 
 

@@ -14,21 +14,34 @@
 </head>
 
 <body>
+    <div class="container text-center rellax">
+        <div class='loader-ring' id="loader">
+            <div class='loader-ring-light'></div>
+            <div class='loader-ring-track'></div>
+            <img class="lo" src="assests/images/logo.png" alt="">
+            Ahoy! welcome aboard
 
-    <img id="compass" src="assests/images/compass.png" />
-    <div class="right-text">After fixing and making the submarine work, you dive into the ocean through the magical canal. 
-        Welcome to the water world!
-        Get the compass to dive deep in!
-        But your compass is not in a working condition. Complete the question to get your ship going.
-        <img id="M1" src="assests/images/M1.png"><br>
-        Ahoy! welcome aboard
-        <form id="answer-form">
-            <input type="text" id="answer-input-box" name="answer1" />
-            </br>
-            <button type="submit" id="answer-submit">Submit</button>
-        </form>
+        </div>
     </div>
-
+    <div id="main">
+        <img id="compass" src="assests/images/compass.png" />
+        <div class="right-text">After fixing and making the submarine work, you dive into the ocean through the magical
+            canal.
+            Welcome to the water world!
+            Get the compass to dive deep in!
+            But your compass is not in a working condition. Complete the question to get your ship going.
+            <img id="M1" src="assests/images/M1.png">
+            <br>
+            <div class="text-danger d-none" id="wrong-ans">
+                Wrong Answer
+            </div>
+            <form id="answer-form">
+                <input type="text" id="answer-input-box" name="answer2" />
+                </br>
+                <button type="submit" id="answer-submit">Submit</button>
+            </form>
+        </div>
+    </div>
     <!-- Dependency Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

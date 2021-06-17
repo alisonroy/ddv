@@ -14,105 +14,114 @@
 </head>
 
 <body>
-    <div class="seaContainer">
-        <div class="submarine__container">
-            <div class="light"></div>
-            <div class="submarine__periscope"></div>
-            <div class="submarine__periscope-glass"></div>
-            <div class="submarine__sail">
-                <div class="submarine__sail-shadow dark1">
-                </div>
-                <div class="submarine__sail-shadow light1"></div>
-                <div class="submarine__sail-shadow dark2"></div>
-            </div>
-            <div class="submarine__body">
-                <div class="submarine__window one">
-
-                </div>
-                <div class="submarine__window two">
-
-                </div>
-                <div class="submarine__shadow-dark"></div>
-                <div class="submarine__shadow-light"></div>
-                <div class="submarine__shadow-arcLight"></div>
-            </div>
-            <div class="submarine__propeller">
-                <div class="propeller__perspective">
-                    <div class="submarine__propeller-parts darkOne"></div>
-                    <div class="submarine__propeller-parts lightOne"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="bubbles__container">
-            <span class="bubbles bubble-1"></span>
-            <span class="bubbles bubble-2"></span>
-            <span class="bubbles bubble-3"></span>
-            <span class="bubbles bubble-4"></span>
-        </div>
-        <div class="ground__container">
-            <div class="ground ground1">
-                <span class="up-1"></span>
-                <span class="up-2"></span>
-                <span class="up-3"></span>
-                <span class="up-4"></span>
-                <span class="up-5"></span>
-                <span class="up-6"></span>
-                <span class="up-7"></span>
-                <span class="up-8"></span>
-                <span class="up-9"></span>
-                <span class="up-10"></span>
-            </div>
-            <div class="ground ground2">
-                <span class="up-1"></span>
-                <span class="up-2"></span>
-                <span class="up-3"></span>
-                <span class="up-4"></span>
-                <span class="up-5"></span>
-                <span class="up-6"></span>
-                <span class="up-7"></span>
-                <span class="up-8"></span>
-                <span class="up-9"></span>
-                <span class="up-10"></span>
-                <span class="up-11"></span>
-                <span class="up-12"></span>
-                <span class="up-13"></span>
-                <span class="up-14"></span>
-                <span class="up-15"></span>
-                <span class="up-16"></span>
-                <span class="up-17"></span>
-                <span class="up-18"></span>
-                <span class="up-19"></span>
-                <span class="up-20"></span>
-            </div>
-
-        </div>
-        <div class="right-text">To start the rescue mission, you will have to fix an old submarine.
-            Complete the question to fix the parts of the submarine which will let you start your journey into the ocean.
-            <br>
-            <br>
-            You and your friend work together and complete fixing the submarine in 14(2/5) days while you and your
-            other friend  together can complete the same work in 10(2/7) days. You alone start to  work and after
-            8 days your friend  replaced him. Your friend  did the work for the next 12 days and the remaining work 
-            is completed by your other in the next 5 days, then find time taken by you, your & Your other friend together
-            to complete that work, if your other friend  works with 50% of his usual efficiency?
-            <br>
-            <br>
-            The  submarine requires both Petrol and Kerosene to work. Also, it will only work if the Cost of the mixture
-            equals to Rs. 7 per liter. How much Kerosene, costing Rs. 5 per Litre should be added to 20 L of Petrol at
-            Rs. 12 per Litre so that the cost of the mixture be worth Rs. 7 per Litre? You find the required amount of
-            Kerosene to keep the submarine running!
-
+    <div class="container text-center rellax">
+        <div class='loader-ring' id="loader">
+            <div class='loader-ring-light'></div>
+            <div class='loader-ring-track'></div>
+            <img class="lo" src="assests/images/logo-white.png" alt="">
             Congrats! Are you ready to enter the ocean?
-            <form id="answer-form">
-                <input type="text" id="answer-input-box" name="answer1" />
-                </br>
-                <button type="submit" id="answer-submit">Submit</button>
-            </form>
+
         </div>
-
     </div>
+    <div id="main">
+        <div class="seaContainer">
+            <div class="submarine__container">
+                <div class="light"></div>
+                <div class="submarine__periscope"></div>
+                <div class="submarine__periscope-glass"></div>
+                <div class="submarine__sail">
+                    <div class="submarine__sail-shadow dark1">
+                    </div>
+                    <div class="submarine__sail-shadow light1"></div>
+                    <div class="submarine__sail-shadow dark2"></div>
+                </div>
+                <div class="submarine__body">
+                    <div class="submarine__window one">
 
+                    </div>
+                    <div class="submarine__window two">
+
+                    </div>
+                    <div class="submarine__shadow-dark"></div>
+                    <div class="submarine__shadow-light"></div>
+                    <div class="submarine__shadow-arcLight"></div>
+                </div>
+                <div class="submarine__propeller">
+                    <div class="propeller__perspective">
+                        <div class="submarine__propeller-parts darkOne"></div>
+                        <div class="submarine__propeller-parts lightOne"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bubbles__container">
+                <span class="bubbles bubble-1"></span>
+                <span class="bubbles bubble-2"></span>
+                <span class="bubbles bubble-3"></span>
+                <span class="bubbles bubble-4"></span>
+            </div>
+            <div class="ground__container">
+                <div class="ground ground1">
+                    <span class="up-1"></span>
+                    <span class="up-2"></span>
+                    <span class="up-3"></span>
+                    <span class="up-4"></span>
+                    <span class="up-5"></span>
+                    <span class="up-6"></span>
+                    <span class="up-7"></span>
+                    <span class="up-8"></span>
+                    <span class="up-9"></span>
+                    <span class="up-10"></span>
+                </div>
+                <div class="ground ground2">
+                    <span class="up-1"></span>
+                    <span class="up-2"></span>
+                    <span class="up-3"></span>
+                    <span class="up-4"></span>
+                    <span class="up-5"></span>
+                    <span class="up-6"></span>
+                    <span class="up-7"></span>
+                    <span class="up-8"></span>
+                    <span class="up-9"></span>
+                    <span class="up-10"></span>
+                    <span class="up-11"></span>
+                    <span class="up-12"></span>
+                    <span class="up-13"></span>
+                    <span class="up-14"></span>
+                    <span class="up-15"></span>
+                    <span class="up-16"></span>
+                    <span class="up-17"></span>
+                    <span class="up-18"></span>
+                    <span class="up-19"></span>
+                    <span class="up-20"></span>
+                </div>
+
+            </div>
+            <div class="right-text">To start the rescue mission, you will have to fix an old submarine.
+                Complete the question to fix the parts of the submarine which will let you start your journey into the
+                ocean.
+                <br>
+                <br>
+                The submarine requires both Petrol and Kerosene to work. Also, it will only work if the Cost of the
+                mixture
+                equals to Rs. 7 per liter. How much Kerosene, costing Rs. 5 per Litre should be added to 20 L of Petrol
+                at
+                Rs. 12 per Litre so that the cost of the mixture be worth Rs. 7 per Litre? You find the required amount
+                of
+                Kerosene to keep the submarine running!<br>(answer should be in litres L)
+                <br>
+                <div class="text-danger d-none" id="wrong-ans">
+                    Wrong Answer
+                </div>
+                <form id="answer-form">
+                    <input type="text" id="answer-input-box" name="answer1" />
+                    </br>
+                    <button type="submit" id="answer-submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
     <!-- Dependency Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -122,6 +131,7 @@
 
     <script src="assests/js/auth_status.js"></script>
     <script src="assests/js/answer.js"></script>
+    <script src="assests/js/sub.js"></script>
 
 
 

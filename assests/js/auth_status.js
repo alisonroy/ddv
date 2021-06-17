@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var page_check = true;
-  if (window.location.pathname == "/ddv/intro.html") {
+  if (window.location.pathname == "/intro.html") {
     var page_check = false;
   }
   $.ajax({
@@ -13,14 +13,17 @@ $(document).ready(function () {
       page_check: page_check,
     },
     success: function (response) {
+      console.log(response);
       var parsedResponse = JSON.parse(response);
       console.log(parsedResponse);
       if (parsedResponse != "false") {
-        if (window.location.pathname != "/" + parsedResponse) {
-          window.location.pathname = parsedResponse;
+        if (parsedResponse != "success") {
+          if (window.location.pathname != parsedResponse) {
+            window.location.pathname = parsedResponse;
+          }
         }
       } else {
-        window.location.pathname = "ddv/logout.html";
+        window.location.pathname = "/logout.html";
         localStorage.clear;
       }
     },

@@ -2,12 +2,11 @@
 require "config.php";
 $name = $_POST["username"];
 $auth_token = $_POST["auth_token"];
-$page_check = $_POST["page_check"];
-$check =  "SELECT auth_token,answer1,answer2,answer3,answer4,answer5,answer6 FROM `STRTjSSGl1`.`user_details` WHERE username = '$name'";
+$check =  "SELECT auth_token,answer1,answer2,answer3,answer4,answer5,answer6,finish_time,time_elapsed,login_time FROM `STRTjSSGl1`.`user_details` WHERE username = '$name'";
 $tab = $conn->query($check);
 $row = mysqli_fetch_assoc($tab);
 if ($row['auth_token'] == $auth_token) {
-    if ($page_check == "true") {
+    if ($row["finish_time"] == NULL) {
         if ($row['answer1'] == NULL) {
             echo json_encode("/sub.html");
         } elseif ($row['answer2'] == NULL) {
@@ -21,7 +20,14 @@ if ($row['auth_token'] == $auth_token) {
         } elseif ($row['answer6'] == NULL) {
             echo json_encode("/bermuda.html");
         } else {
-            echo json_encode("/credit.html");
+            date_default_timezone_set('Asia/Kolkata');
+            $time = date('Y-m-d H:i:s');
+            $date1 = strtotime($time);
+            $date2 = strtotime($row["login_time"]);
+            $minutes = round((abs($date2 - $date1)) / 60, 2);
+            $updt = "UPDATE `STRTjSSGl1`.`user_details` SET `time_elapsed` = '$minutes', `finish_time` = '$time' WHERE (`username` = '$name');";
+            $conn->query($updt);
+            echo json_encode("finished");
         }
     } else {
         echo json_encode("success");

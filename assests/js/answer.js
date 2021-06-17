@@ -1,4 +1,5 @@
-$("#answer-submit").click(function () {
+$("#answer-submit").click(function (e) {
+  e.preventDefault();
   var answer = document.getElementById("answer-input-box").value;
   var answer_no = document.getElementById("answer-input-box").name;
   $.ajax({
@@ -15,8 +16,14 @@ $("#answer-submit").click(function () {
       var parsedResponse = JSON.parse(response);
       console.log(parsedResponse);
       if (parsedResponse != "false") {
-        window.location.pathname = "ddv/" + parsedResponse + ".html";
-      } else {
+        if (parsedResponse != "wrong") {
+          window.location.pathname = "/" + parsedResponse + ".html";
+        } else {
+          document.getElementById("wrong-ans").classList.remove("d-none");
+          setTimeout(function () {
+            document.getElementById("wrong-ans").classList.add("d-none");
+          }, 5000);
+        }
       }
     },
 

@@ -14,36 +14,47 @@
 </head>
 
 <body>
-    <div id="map"></div>
+    <div class="container text-center rellax">
+        <div class='loader-ring' id="loader">
+            <div class='loader-ring-light'></div>
+            <div class='loader-ring-track'></div>
+            <img class="lo" src="assests/images/logo-white.png" alt="">
+            Kudos ! voyage towards the magical canal begins!
 
-    <div class="right-text">Meanwhile, poor Nemo is struggling to meet the princess and the people of mushroom land.
-        He misses her warmth and her love! He sees a shoal of fishes swimming together. Nemo tries to take their help 
-        and find a way out. Fortunately he meets dory -his long lost friend. When they were in a conversation nemo finds
-        that dory was also lost in the ocean by the cursed well. Dory says that she knows a map which will lead to a magical
-        canal that connects with the princess’ palace.   
-        Help dory and nemo to find the map.
-        <br>
-        <br>
-        the words in the map are jumbled, to continue the journey arrange them.
-        Here are some words translated from an artificial language.
-        granamelke means big tree
-        pinimelke means little tree
-        melkehoon means tree house
-        Which word could mean "big house"?
-        Give the reason 
-        <br>
-        <br>
-        While moving towards , they have to find the speed to move their submarine ,  
-        The ratio of time taken for you to  cover (x + 4) km in upstream to that of time taken to cover (x + 20) km in still water is 4: 5. If the ratio of speed t in downstream to that of stream is 5: 1 and the sum of time taken  to cover (x - 5) km in upstream to that in downstream is 8 hours then find the speed  in downstream?
-
-        Kudos !  voyage towards the magical canal begins!
-        <form id="answer-form">
-            <input type="text" id="answer-input-box" name="answer1" />
-            </br>
-            <button type="submit" id="answer-submit">Submit</button>
-        </form>
+        </div>
     </div>
+    <div id="main">
+        <div id="map"></div>
 
+        <div class="right-text">Meanwhile, poor Nemo is struggling to meet the princess and the people of mushroom land.
+            He misses her warmth and her love! He sees a shoal of fishes swimming together. Nemo tries to take their
+            help
+            and find a way out. Fortunately he meets dory -his long lost friend. When they were in a conversation nemo
+            finds
+            that dory was also lost in the ocean by the cursed well. Dory says that she knows a map which will lead to a
+            magical
+            canal that connects with the princess’ palace.
+            Help dory and nemo to find the map.
+            <br>
+            <br>
+            While moving towards , they have to find the speed to move their submarine ,
+            The ratio of time taken for you to cover (x + 4) km in upstream to that of time taken to cover (x + 20) km
+            in
+            still water is 4: 5. If the ratio of speed t in downstream to that of stream is 5: 1 and the sum of time
+            taken
+            to cover (x - 5) km in upstream to that in downstream is 8 hours then find the speed in downstream?(Answer
+            shoulb be in Km/hr)
+            <br>
+            <div class="text-danger d-none" id="wrong-ans">
+                Wrong Answer
+            </div>
+            <form id="answer-form">
+                <input type="text" id="answer-input-box" name="answer4" />
+                </br>
+                <button type="submit" id="answer-submit">Submit</button>
+            </form>
+        </div>
+    </div>
     <!-- Dependency Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

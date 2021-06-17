@@ -14,30 +14,49 @@
 </head>
 
 <body>
-    <canvas id="c"></canvas>
+    <div class="container text-center rellax">
+        <div class='loader-ring' id="loader">
+            <div class='loader-ring-light'></div>
+            <div class='loader-ring-track'></div>
+            <img class="lo" src="assests/images/logo-white.png" alt="">
+            Ah! you are mastering the challenges.
 
-    <div id="info">
-        <div id="top">
-            <a id="close" href="">&times;</a>
         </div>
-
     </div>
-    <div class="right-text">Towards their journey to the canal, a fisherman throws his net deep into the water,
-        poor dory and nemo get caught into the jinxed net. They cry in pain and agony. After winning over the shark,
-        you continue your search for nemo. Finally, you find nemo and long lost dory caught and struggling in a vicious net !
-        Help dory and nemo get out and reunite with the princess.
-        <br>
-        A diffraction grating consisting of 4000 slits per centimetre is illuminated with a monochromatic light that produces the second order diffraction at an angle of 30°. What is the wavelength of the light used?
-        And use the obtained wavelength to find the (a) wavelength, (b) speed and (c) frequency of this light when it travels in water which has a refractive index of 1.33.
-        <br>
-        Ah! you are mastering the challenges.
-        <form id="answer-form">
-            <input type="text" id="answer-input-box" name="answer1" />
-            </br>
-            <button type="submit" id="answer-submit">Submit</button>
-        </form>
-    </div>
+    <div id="main">
+        <canvas id="c"></canvas>
 
+        <div id="info">
+            <div id="top">
+                <a id="close" href="">&times;</a>
+            </div>
+
+        </div>
+        <div class="right-text">Towards their journey to the canal, a fisherman throws his net deep into the water,
+            poor dory and nemo get caught into the jinxed net. They cry in pain and agony. After winning over the shark,
+            you continue your search for nemo. Finally, you find nemo and long lost dory caught and struggling in a
+            vicious
+            net !
+            Help dory and nemo get out and reunite with the princess.
+            <br><br>
+            A diffraction grating consisting of 4000 slits per centimetre is illuminated with a monochromatic light that
+            produces the
+            second order diffraction at an angle of 30°. What is the wavelength of the light used? And use the obtained
+            wavelength to
+            find the wavelength of the light when it travels through water which has a refractive index of 1.33.
+            <br>(Answer
+            should be in Å)
+            <br><br>
+            <div class="text-danger d-none" id="wrong-ans">
+                Wrong Answer
+            </div>
+            <form id="answer-form">
+                <input type="text" id="answer-input-box" name="answer5" />
+                </br>
+                <button type="submit" id="answer-submit">Submit</button>
+            </form>
+        </div>
+    </div>
     <!--div id="new">
       Wobble some <a target="_blank" href="https://codepen.io/dissimulate/details/dJgMaO">jelly</a> <span class="bull">&bull;</span>
       Check out my <a target="_blank" href="https://www.instagram.com/abro_oks/">instagram!</a>

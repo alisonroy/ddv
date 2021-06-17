@@ -85,7 +85,7 @@ $(".next-button.password").click(function () {
         localStorage.setItem("auth_token", parsedResponse);
         console.log("Password Correct");
         $(".password-section").addClass("fold-up");
-        window.location.pathname = "ddv/intro.html";
+        window.location.pathname = "/intro.html";
       } else {
         console.log("Password wrong");
         var fail = document.getElementById("failed");
